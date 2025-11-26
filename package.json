@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon server.js",
-    "start:prod": "set NODE_ENV=PRODUCTION&& nodemon server.js"
+    "start:prod": "set NODE_ENV=PRODUCTION&& nodemon server.js",
+    "debug": "ndb server.js"
   },
   "author": "Aminu Lukmon",
   "license": "ISC",
@@ -14,7 +15,9 @@
     "dotenv": "^17.2.3",
     "express": "^4.21.2",
     "mongoose": "^8.20.1",
-    "morgan": "^1.10.1"
+    "morgan": "^1.10.1",
+    "slugify": "^1.6.6",
+    "validator": "^13.15.23"
   },
   "devDependencies": {
     "eslint": "^8.57.1",
